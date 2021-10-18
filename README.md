@@ -10,7 +10,6 @@
 ### 8 - CRUD Rest Api
 ### 9 - Creating the resources
 #
-@pmfnascimento 2021
 
 ![alt text for screen readers](https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg "Text to show on mouseover")
 
