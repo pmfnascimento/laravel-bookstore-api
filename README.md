@@ -1,5 +1,5 @@
 ##  Laravel 8 API Tutorial - Books and Authors
-#
+
 ### 1 - Introduction
 ### 2 - HTTP Methods & Service
 ### 3 - JSON API Specification
