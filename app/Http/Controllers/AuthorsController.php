@@ -15,7 +15,7 @@ class AuthorsController extends Controller
      */
     public function index()
     {
-        //
+        return AuthorsResource::collection(Author::all());
     }
 
     /**
@@ -36,7 +36,13 @@ class AuthorsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $faker = \Faker\Factory::create(1);
+
+        $author = Author::create([
+         'name' => $faker->name
+        ]);
+
+        return new AuthorsResource($author);
     }
 
     /**
@@ -70,7 +76,11 @@ class AuthorsController extends Controller
      */
     public function update(Request $request, Author $author)
     {
-        //
+        $author->update([
+            'name' => $request->input('name')
+        ]);
+
+        return new AuthorsResource($author);
     }
 
     /**
@@ -81,6 +91,7 @@ class AuthorsController extends Controller
      */
     public function destroy(Author $author)
     {
-        //
+        $author->delete();
+        return response(null,204);
     }
 }
